@@ -13,5 +13,5 @@ class BookingSerializer(serializers.ModelSerializer):
     def validate_title(self, value):
         return bleach.clean(value)
     class Meta:
-        model = Menu
+        model = Booking
         fields = '__all__'
